@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, EmailIcon, SearchIcon,  } from './styles';
+import ProfilePage from '../ProfilePage'
+
+import { Container, Header, BackIcon, BellIcon, ProfileInfo, BottomMenu, HomeIcon, EmailIcon, SearchIcon,  } from './styles';
 
 function index() {
   return (
@@ -15,9 +17,9 @@ function index() {
                   <span>500 Tweets</span>
               </ProfileInfo>
           </Header>
-          {/*<ProfilePage /> */}
+          <ProfilePage /> 
            <BottomMenu>
-              <HomeIcon />
+              <HomeIcon className="active" />
               <SearchIcon />
               <BellIcon />
               <EmailIcon />
